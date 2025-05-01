@@ -1,0 +1,42 @@
+<article class="gallery">
+    <img src="https://loremflickr.com/320/240?lock=1" />
+    <img src="https://loremflickr.com/paris,girl/all"/>
+    <img src="https://loremflickr.com/320/240?random=1" />
+<img src="https://loremflickr.com/320/240?random=2" />
+<img src="https://loremflickr.com/320/240?random=3" />
+</article>
+<article class="gallery">
+    <img src="https://assets.codepen.io/1506195/unsplash-music-0.avif" alt="guitar player at concert" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-1.avif" alt="duo singing" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-2.avif" alt="crowd cheering" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-3.avif" alt="singer performing" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-4.avif" alt="singer fistbumping crowd" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-5.avif" alt="man with a guitar singing" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-6.avif" alt="crowd looking at a lighted stage" />
+    <img src="https://assets.codepen.io/1506195/unsplash-music-7.avif" alt="woman singing on stage" />
+  </article>
+    <style>
+        body {
+        background-color: #000;
+        color: #fff;
+        font-family: sans-serif;
+        margin: 0;
+        }
+        .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+        }
+        .gallery img {
+        width: 100%;
+        height: auto;
+        }
+        </style>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+    const lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+    });
+    lazyLoadInstance.update();
+</script>
+<label for=""></label>

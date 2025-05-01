@@ -1,0 +1,29 @@
+#red {
+  color: red;
+}
+#blue {
+  color: blue;
+}
+#orange {
+  color: orange;        
+}
+#brown {
+  color: #2c45b685;        
+}
+#darkblue {
+  color: darkblue;        
+}
+h2, h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic
+}
+img {
+  width: 150px;
+  height: 50px;
+}
+* {
+  margin: 0;
+  padding: 0;adial-gradient(at 97.36620322317992% 57.1201635121098%, hsla(52.44094488188976, 94.07407407407409%, 73.52941176470587%, 1) 0%, hsla(52.44094488188976, 94.07407407407409%, 73.52941176470587%, 0) 100%), radial-gradient(at 47.20796371253251% 52.49247953364904%, hsla(22.5, 100%, 87.45098039215686%, 1) 0%, hsla(22.5, 100%, 87.45098039215686%, 0) 100%), radial-gradient(at 92.91312439096984% 98.5313912332609%, hsla(281.1023622047244, 69.39890710382511%, 64.11764705882352%, 1) 0%, hsla(281.1023622047244, 69.39890710382511%, 64.11764705882352%, 0) 100%);
+}
