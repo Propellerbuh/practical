@@ -1,0 +1,60 @@
+/* @media (min-width: 600px) and (max-width: 900px) { */
+
+@media 
+(max-width: 500px) {
+    body {
+        background-color: rgb(219, 96, 164);  
+    }
+}
+@media
+(min-width: 501px) and (max-width: 1000px) {
+    body {
+        background-color: rgb(39, 39, 233);  
+    }
+}
+@media
+(min-width: 1001px) and (max-width: 1500px) {
+    body {
+        background-color: rgb(210, 106, 228);  
+    }
+}
+@media
+(min-width: 1501px) and (max-width: 2000px) {
+    body {
+        background-color: rgb(222, 200, 30);  
+    }
+}
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
