@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Justify Content Demo</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid #2c3e50;
+            border-radius: 8px;
+            max-width: 800px;
+            min-height: 120px;
+            background: #ecf0f1;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background: #3498db;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            border-radius: 4px;
+        }
+
+        /* Значения justify-content */
+        .flex-start { justify-content: flex-start; }
+        .center { justify-content: center; }
+        .flex-end { justify-content: flex-end; }
+        .space-between { justify-content: space-between; }
+        .space-around { justify-content: space-around; }
+        .space-evenly { justify-content: space-evenly; }
+
+        /* Вертикальный пример */
+        .column {
+            flex-direction: column;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #2c3e50;">Демонстрация justify-content</h1>
+    
+    
+    <div class="container flex-start">
+        
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2 style="text-align: center">flex-start (по умолчанию)<h2>
+
+    <div class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2 style="text-align: center">center</h2>
+
+    <div class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2 style="text-align: center">flex-end</h2>
+
+    <div class="container space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2 style="text-align: center">space-between</h2>
+
+    <div class="container space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2 style="text-align: center">space-around</h2>
+
+    <div class="container space-evenly">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+    <h2 style="text-align: center">space-evenly</h2>
+    <br>
+
+    <h3 style="text-align: center">Вертикальная ось (flex-direction: column)</h3>
+    <div class="container column space-evenly">
+        <div class="item" style="width: auto">1</div>
+        <div class="item" style="width: auto">2</div>
+        <div class="item" style="width: auto">3</div>
+    </div>
+</body>
+</html>

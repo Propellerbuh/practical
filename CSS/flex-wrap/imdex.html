@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex-wrap Demo</title>
+    <style>
+        .container {
+            display: flex;
+            margin: 25px auto;
+            padding: 20px;
+            border: 3px solid #34495e;
+            border-radius: 10px;
+            max-width: 900px;
+            background: #f8f9fa;
+            gap: 15px;
+        }
+
+        .item {
+            min-width: 200px;
+            height: 80px;
+            background: #e74c3c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1em;
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+
+        /* Значения flex-wrap */
+        .nowrap { flex-wrap: nowrap; }
+        .wrap { flex-wrap: wrap; }
+        .wrap-reverse { flex-wrap: wrap-reverse; }
+
+        /* Вертикальные примеры */
+        .vertical {
+            flex-direction: column;
+            height: 400px;
+        }
+        .gorizontal {
+            flex-direction: row;
+            height: 200px;
+
+        }
+        
+        .vertical .item {
+            width: auto;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: #2c3e50;">Демонстрация flex-wrap</h1>
+
+    <div class="container nowrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+    <p style="text-align: center"><strong>nowrap</strong> (элементы сжимаются)</p>
+
+    <div class="container wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+    <p style="text-align: center"><strong>wrap</strong> (автоматический перенос)</p>
+
+    <div class="container wrap-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+    <p style="text-align: center"><strong>wrap-reverse</strong> (обратный порядок)</p>
+
+    <h3 style="text-align: center">Вертикальный контейнер (flex-direction: column)</h3>
+    <div class="container vertical wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+    </div>
+    <h3 style="text-align: center">Горизонтальный контейнер (flex-direction: row)</h3>
+    <div class="container gorizontal wrap">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+       
+    </div>
+</body>
+</html>
